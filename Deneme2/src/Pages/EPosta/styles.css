@@ -1,0 +1,33 @@
+.custom-table {
+    border: 1px solid #dee2e6;
+    /* Tablonun dış kenarları için */
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #dee2e6;
+    /* Hücreler için kenarlıklar */
+}
+
+.custom-table th {
+    background-color: #f8f9fa;
+    /* Başlık hücreleri için arka plan rengi */
+}
+
+.table {
+    border-collapse: collapse;
+    /* Kenarlıkların birleştirilmesi için */
+}
+
+.table th,
+.table td {
+    border: 1px solid #dee2e6;
+    /* Hücreler için kenarlık */
+}
+
+.table th {
+    background-color: #f8f9fa;
+    /* Başlık hücreleri için arka plan rengi */
+    text-align: center;
+    /* Başlık metinlerinin ortalanması için */
+}

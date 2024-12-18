@@ -1,0 +1,314 @@
+body {
+    background-color: #ffffff;
+    overflow-y: auto;
+    overflow-x: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+
+.sidebar {
+    position: static;
+    top: 0;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 0;
+    background-color: transparent;
+    color: #343a40;
+    margin-top: 7rem;
+    margin-left: 0;
+    z-index: 1001;
+    width: 250px;
+
+    height: 200vh;
+    overflow-y: auto;
+    overflow: hidden;
+
+    /* Geçiş animasyonu */
+
+
+
+
+    /* Geçiş efekti */
+}
+
+
+
+.col-1.sdbar.open {
+
+
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0%);
+
+
+
+
+
+
+}
+
+
+.col-1.sdbar.close {
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(-260%);
+
+}
+
+.col-9.content.open {
+    transition: transform 0.35s ease-in;
+    transform: translateX(10%);
+
+}
+
+.col-9.content.close {
+    transition: transform 0.35s ease-in;
+    transform: translateX(4%);
+}
+
+
+
+.menu-icon.open {
+    transition: transform 0.7s ease-in-out;
+    /* Geçiş animasyonu */
+
+
+    /* Açıkken 90 derece döndür */
+}
+
+.menu-icon.close {
+    transition: transform 0.5s ease-in;
+    /* Geçiş animasyonu */
+    transform: translateX(-650%);
+
+
+    /* Geçiş animasyonu */
+    rotate: translateX(90deg);
+
+
+}
+
+
+
+
+
+
+
+.toggle-button {
+    position: fixed;
+    /* Sabit konumda tut */
+    top: 60px;
+    /* Üstten 20px mesafede */
+    left: 255px;
+    /* Soldan 20px mesafede */
+    z-index: 1001;
+
+    /* Sidebar'ın üstünde görünmesi için */
+}
+
+
+
+.sidebar h4 {
+    text-align: center;
+
+
+    color: #ffffff !important;
+
+    width: 300px;
+    max-height: 100vh;
+    position: static;
+
+
+
+    /* Sabit menü */
+}
+
+
+.list-group-item {
+    border-radius: 10px 100px / 120px !important;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+
+    cursor: pointer;
+
+
+
+    border: 2px solid rgb(183, 183, 189) !important;
+
+
+}
+
+.list-group-item:hover {
+    background-color: #0163f6f3;
+
+    color: white;
+    border: 2px solid black;
+
+}
+
+.list-group-item.active {
+    background-color: #0163f6f3 !important;
+
+    color: white !important;
+    border: 2px solid rgb(212, 206, 206) !important;
+
+
+}
+
+.submenu {
+
+    font-size: 13px !important;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none !important;
+
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    background-color: light !important;
+    /* Daha açık bir arka plan rengi */
+    font-weight: 600;
+    color: #000000 !important;
+    /* Yazı rengini siyah yaptım */
+
+
+    /* Köşeleri yuvarladım */
+}
+
+.submenu.active {
+    text-decoration: underline !important;
+}
+
+.submenu:hover {
+    background-color: white !important;
+}
+
+/* Hover durumunda yazı rengini beyaz yap */
+
+
+
+
+
+
+.submenu a {
+    text-decoration: none;
+    /* Alt çizgiyi kaldırır */
+    color: rgb(0, 0, 0);
+    /* Metin rengini üst öğeden alır */
+}
+
+.submenu a:hover {
+    text-decoration: underline;
+    /* Üzerine gelindiğinde alt çizgi ekler (isteğe bağlı) */
+}
+
+.active-submenu {
+    text-decoration: underline;
+}
+
+
+.content {
+
+    margin-left: 20px;
+
+    padding: 20px;
+}
+
+.content h2 {
+    color: #abb5c0;
+
+}
+
+
+.navbar {
+    border-radius: 0 0 35px 35px;
+
+    /*background-color: #198754;*/
+    background: #0163f6f3;
+
+
+    box-shadow: 0 2px 5px rgba(0.1, 0.1, 0.1, 0.1);
+
+
+
+}
+
+.navbar a {
+    left: 100%;
+
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.navbar.subnavbaropen {
+
+    z-index: 999;
+    left: 36%;
+    right: 36%;
+
+    position: fixed;
+    top: 65.1px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 1px;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(16%);
+    background: #084e92;
+
+
+
+
+
+}
+
+
+
+
+
+.navbar.subnavbarclose {
+    background: #084e92;
+    z-index: 999;
+
+    left: 36%;
+    right: 36%;
+
+    position: fixed;
+    top: 65.1px;
+    padding-bottom: 1px;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0%);
+
+
+
+
+
+}
+
+
+
+
+
+.toggle-button {
+    margin: 10px;
+    /* Buton için biraz boşluk */
+    cursor: pointer;
+    /* Tıklanabilir olduğunu göster */
+}

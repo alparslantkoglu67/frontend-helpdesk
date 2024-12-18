@@ -1,0 +1,90 @@
+/* Genel sayfa stili */
+.container {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 50px;
+    max-width: 100vh !important;
+    max-height: 150vh !important;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* Logo alanı */
+.container img {
+    width: 30rem;
+    /* Logonun genişliğini ayarlamak için */
+    height: auto;
+
+
+
+
+    position: block;
+
+}
+
+/* Kart (Login alanı) stili */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: center;
+    width: 70vh;
+}
+
+.card-title {
+    color: #185ca5;
+    /* Bootstrap birincil renk */
+    font-weight: 1000;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-body {
+    padding: 20px;
+
+}
+
+.card h5 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Dil seçenekleri ve form alanı */
+.language-options,
+.login-form {
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5rem !important;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobil uyumlu hale getirmek için */
+@media (max-width: 576px) {
+    .card {
+        width: 90%;
+    }
+}
+
+.form-group {
+    text-align: start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px !important;
+}
